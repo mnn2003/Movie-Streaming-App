@@ -48,7 +48,7 @@ export function MovieDetailsPage() {
               {movie.overview}
             </p>
 
-            <div className="mb-8 aspect-video overflow-hidden rounded-lg bg-black">
+            <div className="mb-8 aspect-video overflow-hidden rounded-lg bg-black flex justify-center items-center">
               {isYouTubeVideo ? (
                 <iframe
                   src={`https://www.youtube.com/embed/${new URL(movie.video_url).searchParams.get("v")}`}
